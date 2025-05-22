@@ -8,7 +8,7 @@ export const sampleModels = [
   { id: 'cube', name: 'Cube', type: 'primitive' },
   { id: 'sphere', name: 'Sphere', type: 'primitive' },
   { id: 'torus', name: 'Torus', type: 'primitive' },
-  { id: 'statue', name: 'Statue', url: 'https://danzer-bit.github.io/ModelLibrary/SmallStatue.glb', type: 'gltf' },
+  { id: 'statue', name: 'Statue', url: 'https://danzer-bit.github.io/ModelLibrary/SmallStatue.glb', type: 'glb' },
 ];
 
 // Create a primitive geometry
@@ -25,7 +25,7 @@ export const createPrimitive = (type: string): THREE.BufferGeometry => {
   }
 };
 
-// Load a model from file
+// Load a model from url
 export const loadModel = (
   url: string,
   onProgress?: (event: ProgressEvent) => void

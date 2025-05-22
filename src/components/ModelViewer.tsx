@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect, Suspense } from 'react';
 import * as THREE from 'three';
 import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls, Stage, useGLTF } from '@react-three/drei';
-import { createPrimitive, loadModelFromFile } from '@/lib/modelLoader';
+import { createPrimitive, loadModel, loadModelFromFile } from '@/lib/modelLoader';
 import { toast } from '@/components/ui/use-toast';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -65,11 +65,17 @@ const ModelViewer: React.FC<ModelViewerProps> = ({
   const [geometry, setGeometry] = useState<THREE.BufferGeometry | null>(null);
   
   // Create primitive geometry when selectedModelId changes
+  // No function for ext files, only primitives are used
   useEffect(() => {
     if (selectedModelId && ['cube', 'sphere', 'torus'].includes(selectedModelId)) {
       const newGeometry = createPrimitive(selectedModelId);
       setGeometry(newGeometry);
     }
+    //if (selectedModelId && ['statue'].includes(selectedModelId)) {
+    // const newGeometry = loadModel(selectedModelId);
+    //console.log(customModel);
+    //}
+    
   }, [selectedModelId]);
   
   // Handle drag and drop events

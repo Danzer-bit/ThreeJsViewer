@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import * as THREE from 'three';
 import ModelViewer from '@/components/ModelViewer';
 import ControlPanel from '@/components/ControlPanel';
-import { loadModelFromFile } from '@/lib/modelLoader';
+import { loadModel, loadModelFromFile, sampleModels } from '@/lib/modelLoader';
 import { useToast } from '@/components/ui/use-toast';
 
 const Index = () => {
@@ -35,10 +35,19 @@ const Index = () => {
     }
   };
 
-  const handleSelectModel = (modelId: string) => {
+  //modifica per la gestione dei modelli
+  const handleSelectModel = async (modelId: string) => {
+  const modelData = sampleModels.find(m => m.id === modelId) || null;
+  //console.log(modelData);
+  if (modelData?.url) {
+    const model = await loadModel(modelData.url);
+    setSelectedModelId(modelId);
+    setCustomModel(model);
+  } else {
     setSelectedModelId(modelId);
     setCustomModel(null);
-  };
+  }
+};
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background to-card">
