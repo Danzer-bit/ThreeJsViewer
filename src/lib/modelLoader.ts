@@ -8,7 +8,7 @@ export const sampleModels = [
   { id: 'cube', name: 'Cube', type: 'primitive' },
   { id: 'sphere', name: 'Sphere', type: 'primitive' },
   { id: 'torus', name: 'Torus', type: 'primitive' },
-  { id: 'suzanne', name: 'Suzanne (Monkey)', url: './models/suzanne.glb', type: 'gltf' },
+  { id: 'statue', name: 'Statue', url: 'https://danzer-bit.github.io/ModelLibrary/SmallStatue.glb', type: 'gltf' },
 ];
 
 // Create a primitive geometry
