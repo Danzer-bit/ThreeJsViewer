@@ -1,24 +1,31 @@
-# Welcome to your Lovable project
+# 3D Model Viewer in Three.js
 
-## Project info
+Questo progetto è una web app realizzata con [Three.js](https://threejs.org/) che permette di visualizzare modelli 3D in tempo reale direttamente dal browser.
 
-**URL**: https://lovable.dev/projects/cdc351b7-ab34-4fb3-ac6b-aabede978aa0
+##  Funzionalità
 
-## How can I edit this code?
+- ✅ **Visualizzazione 3D** interattiva di modelli `.glb` o `.gltf`
+- 📂 **Caricamento drag & drop**: trascina un file 3D direttamente nella finestra del viewer
+- 📁 **Selezione da menu**: scegli uno dei modelli predefiniti dal menu a tendina
+- 🧵 **Modalità wireframe**: attiva la visualizzazione a reticolo della mesh del modello
 
-There are several ways of editing your application.
+##  Come usarlo
 
-**Use Lovable**
+### ✅ Online
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cdc351b7-ab34-4fb3-ac6b-aabede978aa0) and start prompting.
+Puoi usare il viewer direttamente dalla versione online pubblicata su GitHub Pages:
 
-Changes made via Lovable will be committed automatically to this repo.
+📎 **[Vai al sito](https://danzer-bit.github.io/ThreeJsViewer/)** ← *(sostituisci con il link reale della tua repo)*
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🔧 In locale
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clona il repository:
+
+   ```bash
+   git clone https://github.com/TUO-USERNAME/3d-model-viewer.git
+   cd 3d-model-viewer
 
 Follow these steps:
 
@@ -50,9 +57,9 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+## Quali tecnologie sono state usate?
 
-This project is built with:
+Questo progetto è stato costruito tramite:
 
 - Vite
 - TypeScript
@@ -60,14 +67,4 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/cdc351b7-ab34-4fb3-ac6b-aabede978aa0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
