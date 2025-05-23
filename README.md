@@ -1,21 +1,23 @@
 # 3D Model Viewer in Three.js
 
+![Anteprima dell'app](./img/appview.png)
+
 Questo progetto è una web app realizzata con [Three.js](https://threejs.org/) che permette di visualizzare modelli 3D in tempo reale direttamente dal browser.
 
-##  Funzionalità
+## 🚀 Funzionalità
 
 - ✅ **Visualizzazione 3D** interattiva di modelli `.glb` o `.gltf`
 - 📂 **Caricamento drag & drop**: trascina un file 3D direttamente nella finestra del viewer
 - 📁 **Selezione da menu**: scegli uno dei modelli predefiniti dal menu a tendina
 - 🧵 **Modalità wireframe**: attiva la visualizzazione a reticolo della mesh del modello
 
-##  Come usarlo
+## 🖱️ Come usarlo
 
 ### ✅ Online
 
 Puoi usare il viewer direttamente dalla versione online pubblicata su GitHub Pages:
 
-📎 **[Vai al sito](https://danzer-bit.github.io/ThreeJsViewer/)** ← *(sostituisci con il link reale della tua repo)*
+📎 **[Vai al sito](https://danzer-bit.github.io/ThreeJsViewer/)**
 
 ---
 
@@ -24,47 +26,56 @@ Puoi usare il viewer direttamente dalla versione online pubblicata su GitHub Pag
 1. Clona il repository:
 
    ```bash
-   git clone https://github.com/TUO-USERNAME/3d-model-viewer.git
-   cd 3d-model-viewer
+   git clone https://github.com/danzer-bit/ThreeJsViewer.git
+   ```
 
-Follow these steps:
+2. Spostati nella directory del progetto:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+   ```bash
+   cd ThreeJsViewer
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Installa le dipendenze:
 
-# Step 3: Install the necessary dependencies.
-npm i
+   ```bash
+   npm install
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+4. Avvia la preview in locale:
+
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📦 Build per la produzione
+
+Per generare la build ottimizzata da caricare su GitHub Pages:
+
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+La versione compilata sarà disponibile nella cartella `dist/`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## ⚙️ Tecnologie usate
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- [Three.js](https://threejs.org/) – rendering 3D
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/) – bundler e dev server veloce
+- [shadcn/ui](https://ui.shadcn.dev/) – componenti UI moderni
+- [Tailwind CSS](https://tailwindcss.com/) – utility-first CSS
 
-## Quali tecnologie sono state usate?
+---
 
-Questo progetto è stato costruito tramite:
+## 🧾 Licenza
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Questo progetto è distribuito sotto licenza MIT. Vedi il file `LICENSE` per maggiori dettagli.
+
+---
 
 
