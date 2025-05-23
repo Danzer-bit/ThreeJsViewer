@@ -8,6 +8,7 @@ export const sampleModels = [
   { id: 'cube', name: 'Cube', type: 'primitive' },
   { id: 'sphere', name: 'Sphere', type: 'primitive' },
   { id: 'torus', name: 'Torus', type: 'primitive' },
+  { id: 'helmet', name: 'DamagedHelmet', url: 'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF-Binary/DamagedHelmet.glb', type: 'glb' },
   { id: 'statue', name: 'Statue', url: 'https://danzer-bit.github.io/ModelLibrary/SmallStatue.glb', type: 'glb' },
 ];
 
